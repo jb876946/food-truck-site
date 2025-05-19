@@ -1,0 +1,122 @@
+/* Reset & Basics */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Segoe UI', sans-serif;
+	background: #fff8f0;
+	color: #333;
+}
+
+/* Navbar */
+
+.navbar {
+	background: #ff6347;
+	padding: 15px 20px;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-logo {
+	font-size: 1.5em;
+	color: white;
+	font-weight: bold;
+}
+
+.nav-links {
+	list-style: none;
+	display: flex;
+	gap: 20px;
+}
+
+.nav-links li a {
+	color: white;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.nav-links li {
+	position: relative;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	top: 30px;
+	background: white;
+	min-width: 120px;
+	border: 1px solid #ddd'
+	z-index: 999;
+}
+
+.dropdown-content li a {
+	color: #333;
+	padding: 10px;
+	display: block;
+	text-decoration: none;
+}
+
+.dropdown-content li a:hover {
+	background-color: #f4f4f4;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+/* Hero Section */
+
+.hero {
+	background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+	color: white;
+	text-align: center;
+	padding: 100px 20px;
+}
+
+.hero h1 {
+	font-size: 3em;
+	margin-bottom: 20px;
+	text-shadow: 2px 2px 4px #000;
+}
+
+.hero p {
+	font-size: 1.2em;
+	margin-bottom: 30px;
+	text-shadow: 1px 1px 3px #000;
+}
+
+/* Social Buttons */
+
+.social-buttons {
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+}
+
+.btn {
+	padding: 10px 20px;
+	border-radius: 5px;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.instagram { background: #e4405f; }
+.facebook { background: #3b5998; }
+.twitter { background: #1da1f2; }
+
+footer {
+	background: #eee;
+	text-align: center;
+	padding: 15px;
+	font-size: 14px;
+	margin-top: 40px;
+}
