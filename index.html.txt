@@ -1,5 +1,3 @@
-index.html
-
 <!DOCTYPE html>
 <html lang = "en">
 
@@ -11,12 +9,10 @@ index.html
 	</head>
 
 	<body>
-
 		<header>
 			<h1> Food truck </h1>
 			<p> Insert slogan here	 </p>
 		</header>
-
 
 		<nav>
 			<a href="#menu"> Menu </a>
