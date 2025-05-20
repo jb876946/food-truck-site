@@ -120,22 +120,3 @@ footer {
 	font-size: 14px;
 	margin-top: 40px;
 }
-
-html, body {
-	height: 100%;
-	margin: 0;
-}
-
-body {
-	display: flex;
-	flex-direction: column;
-}
-
-header, footer {
-	flex: none;
-}
-
-main {
-	flex: 1;
-	overflow-y: auto;
-}
