@@ -142,3 +142,46 @@ main {
 	-webkit-overflow-scrolling: touch;
 	flex: auto;
 }
+
+.main-content {
+	padding: 40px 20px;
+	max-width: 1000px;
+	margin: auto;
+}
+
+.content-section {
+	margin-bottom: 50px;
+}
+
+.content-section h2 {
+	font-size: 2em;
+	margin-bottom: 15px;
+	color: #ff6347;
+}
+
+.content-section p {
+	font-size: 1.1em;
+	line-height: 1.6;
+}
+
+/* cards for popular items */
+
+.card-grid {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.card {
+	background: #fff;
+	border: 1px solid #ddd;
+	padding: 20px;
+	flex: 1 1 280px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+	border-radius: 8px;
+}
+
+.card h3 {
+	color: #ff6347;
+	margin-bottom: 10px;
+}
