@@ -9,152 +9,136 @@ html {
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background: #fff8f0;
-  color: #333;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  font-family: 'Barlow', sans-serif;
+  background: white;
+  color: #111;
+  overflow-x: hidden;
 }
 
 /* navbar begins */
 .navbar {
-  background: #ff6347;
-  padding: 20px;
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000;
-  transition: all 0.3s ease;
+  padding: 25px 30px;
+  background: #fff;
+  color: #000;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 999;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .navbar.shrink {
-  padding: 10px 20px;
+  padding: 10px 30px;
+  font-size: 0.95rem;
 }
 
-.nav-logo {
-  font-size: 1.5em;
-  color: white;
+.logo {
+  font-size: 1.8rem;
   font-weight: bold;
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
+.desktop-nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
 }
 
-.nav-links li a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
 }
 /* navbar ends */
 
-/* dropdown begins */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background: white;
-  top: 100%;
-  border: 1px solid #ddd;
-  z-index: 999;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown-content li a {
-  color: #333;
-  padding: 10px;
-  display: block;
-}
-/* dropdown ends */
-
 /* header begins */
 .header {
-  background: url('') center/cover no-repeat;
-  color: white;
-  padding: 120px 20px 100px;
-  text-align: center;
-}
-
-.header h1 {
-  font-size: 3em;
-  text-shadow: 2px 2px 5px #000;
-}
-
-.social-buttons {
-  margin-top: 20px;
+  height: 100vh;
+  background: url('');
   display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.btn {
-  padding: 10px 20px;
-  border-radius: 5px;
+  justifcy-content: center;
+  align-items: center;
   color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.instagram { background: #e4405f; }
-.facebook { background: #3b5998; }
-.tiktok { background: #000000; }
-/* header ends */
-
-/* main content begins */
-main.main-content {
-  padding-top: 100px;
-  flex: 1;
-}
-/* main content ends */
-
-/* footer begins */
-footer {
-  background: #eee;
   text-align: center;
   padding: 20px;
 }
+
+.header h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.header p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+/* header ends */
+
+/* sections */
+.section {
+  padding: 100px 20px;
+  text-align: center;
+}
+.black-section {
+  background: #111;
+  color: white;
+}
+
+.light-section {
+  background: #f8f8f8;
+  color: #111;
+}
+
+/* footer begins */
+footer {
+  text-align: center;
+  padding: 30px0;
+  background: #000;
+  color: white;
+  font-size: 0.9rem;
+}
 /* footer ends */
 
-/* mobile menu */
-.mobile-menu {
-  display: none;
+/* mobile overlay nav */
+.overlay {
+  height: 0%;
+  width: 100%;
   position: fixed;
-  background: #ff6347;
+  z-index: 1000;
   top: 0;
   left: 0;
-  height: 100vh;
+  background-color: rgba(0.0,0,0.95);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 30%;
   width: 100%;
-  z-index: 2000;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 
-.mobile-menu ul li {
-  margin: 20px 0;
-}
-
-.mobile-menu ul li a {
-  color: white;
-  font-size: 1.5em;
+.overlay a {
+  padding: 15px;
   text-decoration: none;
+  font-size: 2rem;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
 }
 
-.close-btn {
+.closebtn {
   position: absolute;
   top: 20px;
-  right: 30px;
-  font-size: 2em;
+  right: 25px;
+  font-size: 2.5rem;
   color: white;
-  cursor: pointer;
+  text-decoration: none;
 }
 /* mobile menu ends */
 
@@ -164,11 +148,7 @@ footer {
     display: none;
   }
 
-.mobile-toggle {
+.hamburger {
   display: block;
-}
-
-.mobile-menu.show {
-  display: flex;
 }
 }
