@@ -148,7 +148,10 @@ footer {
     display: none;
   }
 
-.hamburger {
-  display: block;
-}
+  .desktop-nav {
+    display: none !important; 
+
+  .hamburger {
+    display: block;
+  }
 }
