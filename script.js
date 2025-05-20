@@ -1,16 +1,16 @@
 // shrink navbar on scroll begins
-
-window.addEventListener('scroll', () => {
-  const navbar = document.getElementById('navbar');
-  navbar.classList.toggle('shrink', window.scrollY > 50%);
+window.addEventListener("scroll", () => {
+  const navbar = document.querySelector(".navbar");
+  navbar.classList.toggle("shrink", window.scrollY > 80);
 });
 // shrink navbar on scroll ends
 
-// toggle mobile menu begins
-document.getElementById('mobile-toggle').addEventListener('click', () => {
-  document.getElementById('mobile-menu').classList.add('show');
-});
+// function and close mobile nav begins
+function openNav() {
+  document.getElementById("mobileMenu").style.height = "100%";
+}
 
-document.getElementById('close-btn').addEventListener('click', () => {
-  document.getElementById('mobile-menu').classList.remove('show');
-});
+function closeNav() {
+  document.getElementById("mobileMenu").style.height = "0%";
+}
+// function and close mobile nav ends
