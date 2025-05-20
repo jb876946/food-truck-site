@@ -144,27 +144,28 @@ main {
 }
 
 .main-content {
-	padding: 40px 20px;
-	max-width: 1000px;
+	padding: 60px 20px;
+	max-width: 1100px;
 	margin: auto;
 }
 
 .content-section {
-	margin-bottom: 50px;
+	margin-bottom: 80px;
 }
 
 .content-section h2 {
-	font-size: 2em;
-	margin-bottom: 15px;
+	font-size: 2.4em;
+	margin-bottom: 20px;
 	color: #ff6347;
 }
 
 .content-section p {
 	font-size: 1.1em;
-	line-height: 1.6;
+	line-height: 1.7;
+	margin-bottom: 20px;
 }
 
-/* cards for popular items */
+/* cards */
 
 .card-grid {
 	display: flex;
@@ -173,7 +174,7 @@ main {
 }
 
 .card {
-	background: #fff;
+	background: white;
 	border: 1px solid #ddd;
 	padding: 20px;
 	flex: 1 1 280px;
@@ -184,4 +185,36 @@ main {
 .card h3 {
 	color: #ff6347;
 	margin-bottom: 10px;
+}
+
+/* gallery */
+
+.gallery-grid {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+}
+
+.gallery-grid img {
+	width: 100%;
+	max-width: 300px;
+	border-radius: 10px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* testimonials */
+
+blockquote {
+	font-style: italic;
+	background: #fff5f0;
+	padding: 20px;
+	margin-bottom: 20px;
+	border-left: 4px solid #ff6347;
+}
+
+blockquote {
+	display: block;
+	margin-top: 10px;
+	font-weight: bold;
+	color: #555;
 }
