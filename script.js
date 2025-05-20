@@ -9,6 +9,15 @@ window.addEventListener('scroll', () => {
 });
 // shrink navbar on scroll ends
 
+// Open and close mobile nav
+function openNav() {
+  document.getElementById("mobileMenu").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("mobileMenu").style.height = "0%";
+}
+
 // mobile nav toggle begins
 document.getElementById('menu-toggle').addEventListener('click', () => {
   const navLinks = document.getElementById('nav-links');
