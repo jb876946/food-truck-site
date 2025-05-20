@@ -6,7 +6,13 @@
 	box-sizing: border-box;
 }
 
-body {
+html, body {
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+	height: auto;
+	overflow-x: hidden;
+	overflow-y: auto;
 	font-family: 'Segoe UI', sans-serif;
 	background: #fff8f0;
 	color: #333;
@@ -53,7 +59,7 @@ body {
 	top: 30px;
 	background: white;
 	min-width: 120px;
-	border: 1px solid #ddd'
+	border: 1px solid #ddd;
 	z-index: 999;
 }
 
@@ -99,6 +105,7 @@ body {
 	display: flex;
 	justify-content: center;
 	gap: 15px;
+	margin-bottom: 40px;
 }
 
 .btn {
@@ -113,6 +120,8 @@ body {
 .facebook { background: #3b5998; }
 .twitter { background: #1da1f2; }
 
+/* Footer */
+
 footer {
 	background: #eee;
 	text-align: center;
@@ -121,26 +130,7 @@ footer {
 	margin-top: 40px;
 }
 
-html, body {
-	margin: 0;
-	padding: 0;
-	min-height: 100%;
-	overflow-x: hidden;
-}
-
-body {
-	display: flex;
-	flex-direction: column;
-}
-
-header,
-footer {
-	flex: none;
-}
-
-main {
-	flex: 1;
-}
+/* Main Content */
 
 .main-content {
 	padding: 60px 20px;
@@ -164,7 +154,7 @@ main {
 	margin-bottom: 20px;
 }
 
-/* cards */
+/* Cards */
 
 .card-grid {
 	display: flex;
@@ -186,7 +176,7 @@ main {
 	margin-bottom: 10px;
 }
 
-/* gallery */
+/* Gallery */
 
 .gallery-grid {
 	display: flex;
@@ -201,7 +191,7 @@ main {
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* testimonials */
+/* Testimonials */
 
 blockquote {
 	font-style: italic;
@@ -211,7 +201,7 @@ blockquote {
 	border-left: 4px solid #ff6347;
 }
 
-blockquote {
+blockquote span {
 	display: block;
 	margin-top: 10px;
 	font-weight: bold;
