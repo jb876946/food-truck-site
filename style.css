@@ -1,209 +1,198 @@
 /* Reset & Basics */
-
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html, body {
-	margin: 0;
-	padding: 0;
-	min-height: 100%;
-	height: auto;
-	overflow-x: hidden;
-	overflow-y: auto;
-	font-family: 'Segoe UI', sans-serif;
-	background: #fff8f0;
-	color: #333;
+  height: auto;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff8f0;
+  color: #333;
 }
 
 /* Navbar */
-
 .navbar {
-	background: #ff6347;
-	padding: 15px 20px;
-	position: sticky;
-	top: 0;
-	z-index: 1000;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  background: #ff6347;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-logo {
-	font-size: 1.5em;
-	color: white;
-	font-weight: bold;
+  font-size: 1.5em;
+  color: white;
+  font-weight: bold;
 }
 
 .nav-links {
-	list-style: none;
-	display: flex;
-	gap: 20px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
 .nav-links li a {
-	color: white;
-	text-decoration: none;
-	font-weight: 500;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 .nav-links li {
-	position: relative;
+  position: relative;
 }
 
 .dropdown-content {
-	display: none;
-	position: absolute;
-	top: 30px;
-	background: white;
-	min-width: 120px;
-	border: 1px solid #ddd;
-	z-index: 999;
+  display: none;
+  position: absolute;
+  top: 30px;
+  background: white;
+  min-width: 120px;
+  border: 1px solid #ddd;
+  z-index: 999;
 }
 
 .dropdown-content li a {
-	color: #333;
-	padding: 10px;
-	display: block;
-	text-decoration: none;
+  color: #333;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
 }
 
 .dropdown-content li a:hover {
-	background-color: #f4f4f4;
+  background-color: #f4f4f4;
 }
 
 .dropdown:hover .dropdown-content {
-	display: block;
+  display: block;
 }
 
 /* Hero Section */
-
 .hero {
-	background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
-	color: white;
-	text-align: center;
-	padding: 100px 20px;
+  background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
 }
 
 .hero h1 {
-	font-size: 3em;
-	margin-bottom: 20px;
-	text-shadow: 2px 2px 4px #000;
+  font-size: 3em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px #000;
 }
 
 .hero p {
-	font-size: 1.2em;
-	margin-bottom: 30px;
-	text-shadow: 1px 1px 3px #000;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 3px #000;
 }
 
 /* Social Buttons */
-
 .social-buttons {
-	display: flex;
-	justify-content: center;
-	gap: 15px;
-	margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
 }
 
 .btn {
-	padding: 10px 20px;
-	border-radius: 5px;
-	color: white;
-	text-decoration: none;
-	font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .instagram { background: #e4405f; }
 .facebook { background: #3b5998; }
-.twitter { background: #1da1f2; }
-
-/* Footer */
-
-footer {
-	background: #eee;
-	text-align: center;
-	padding: 15px;
-	font-size: 14px;
-	margin-top: 40px;
-}
+.twitter, .tiktok { background: #1da1f2; }
 
 /* Main Content */
-
 .main-content {
-	padding: 60px 20px;
-	max-width: 1100px;
-	margin: auto;
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
 }
 
 .content-section {
-	margin-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 .content-section h2 {
-	font-size: 2.4em;
-	margin-bottom: 20px;
-	color: #ff6347;
+  font-size: 2.4em;
+  margin-bottom: 20px;
+  color: #ff6347;
 }
 
 .content-section p {
-	font-size: 1.1em;
-	line-height: 1.7;
-	margin-bottom: 20px;
+  font-size: 1.1em;
+  line-height: 1.7;
+  margin-bottom: 20px;
 }
 
 /* Cards */
-
 .card-grid {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .card {
-	background: white;
-	border: 1px solid #ddd;
-	padding: 20px;
-	flex: 1 1 280px;
-	box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-	border-radius: 8px;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  flex: 1 1 280px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border-radius: 8px;
 }
 
 .card h3 {
-	color: #ff6347;
-	margin-bottom: 10px;
+  color: #ff6347;
+  margin-bottom: 10px;
 }
 
 /* Gallery */
-
 .gallery-grid {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 .gallery-grid img {
-	width: 100%;
-	max-width: 300px;
-	border-radius: 10px;
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Testimonials */
-
 blockquote {
-	font-style: italic;
-	background: #fff5f0;
-	padding: 20px;
-	margin-bottom: 20px;
-	border-left: 4px solid #ff6347;
+  font-style: italic;
+  background: #fff5f0;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 4px solid #ff6347;
 }
 
 blockquote span {
-	display: block;
-	margin-top: 10px;
-	font-weight: bold;
-	color: #555;
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  background: #eee;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  margin-top: 40px;
 }
